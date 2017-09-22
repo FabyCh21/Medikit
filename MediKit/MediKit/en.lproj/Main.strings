@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "¿No tienes una cuenta?"; ObjectID = "96m-dx-RVX"; */
+"96m-dx-RVX.text" = "¿No tienes una cuenta?";
+
+/* Class = "UITextField"; text = "ò+oó"; ObjectID = "DLf-FC-gbv"; */
+"DLf-FC-gbv.text" = "ò+oó";
+
+/* Class = "UIButton"; normalTitle = "       Ingresa con Facebook"; ObjectID = "KQb-Fs-kQ5"; */
+"KQb-Fs-kQ5.normalTitle" = "       Ingresa con Facebook";
+
+/* Class = "UIButton"; normalTitle = "  Usuario/Correo Electrónico"; ObjectID = "KTx-KC-Zw7"; */
+"KTx-KC-Zw7.normalTitle" = "  Usuario/Correo Electrónico";
+
+/* Class = "UIButton"; normalTitle = "      Ingresa con Google"; ObjectID = "M5F-kH-8Gx"; */
+"M5F-kH-8Gx.normalTitle" = "      Ingresa con Google";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "a1D-HQ-hOW"; */
+"a1D-HQ-hOW.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "  Iniciar Sesión"; ObjectID = "bNl-4x-a2a"; */
+"bNl-4x-a2a.normalTitle" = "  Iniciar Sesión";
+
+/* Class = "UIButton"; normalTitle = "  Contraseña"; ObjectID = "fdb-sb-K5R"; */
+"fdb-sb-K5R.normalTitle" = "  Contraseña";
+
+/* Class = "UIButton"; normalTitle = "Regístrate."; ObjectID = "zdw-En-zBs"; */
+"zdw-En-zBs.normalTitle" = "Regístrate.";
