@@ -17,6 +17,17 @@
 		EA0748DB1F6AE77000A39860 /* MediKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0748DA1F6AE77000A39860 /* MediKitUITests.swift */; };
 		EA0748E91F6AEE8800A39860 /* usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0748E81F6AEE8800A39860 /* usuario.swift */; };
 		EAB41ED81F7364B300F0C278 /* images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAB41ED71F7364B300F0C278 /* images.jpg */; };
+		EAE8DDEE1F7D85E20039CDDF /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE8DDED1F7D85E20039CDDF /* RegistroViewController.swift */; };
+		EAE8DDF01F7D8A060039CDDF /* HistorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE8DDEF1F7D8A060039CDDF /* HistorialViewController.swift */; };
+		EAE8DDF21F7D9C5F0039CDDF /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE8DDF11F7D9C5F0039CDDF /* PrincipalViewController.swift */; };
+		EAE8DDF41F7DAF420039CDDF /* PerfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE8DDF31F7DAF420039CDDF /* PerfilesViewController.swift */; };
+		EAE8DDF61F7DB1C10039CDDF /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE8DDF51F7DB1C10039CDDF /* PerfilViewController.swift */; };
+		EAE8DDF81F7DB2CA0039CDDF /* RecetasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE8DDF71F7DB2CA0039CDDF /* RecetasViewController.swift */; };
+		EAE8DDFA1F7DB4040039CDDF /* modiificarRecetaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE8DDF91F7DB4040039CDDF /* modiificarRecetaViewController.swift */; };
+		EAE8DDFC1F7DBA830039CDDF /* historialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE8DDFB1F7DBA830039CDDF /* historialTableViewCell.swift */; };
+		EAE8DDFE1F7DBD090039CDDF /* RecetasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE8DDFD1F7DBD090039CDDF /* RecetasTableViewCell.swift */; };
+		EAE8DE001F7DBFB30039CDDF /* principalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE8DDFF1F7DBFB30039CDDF /* principalTableViewCell.swift */; };
+		EAE8DE021F7DC2760039CDDF /* PerfilesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE8DE011F7DC2760039CDDF /* PerfilesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +65,17 @@
 		EA0748E81F6AEE8800A39860 /* usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = usuario.swift; sourceTree = "<group>"; };
 		EAB41ED61F73524B00F0C278 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		EAB41ED71F7364B300F0C278 /* images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpg; sourceTree = "<group>"; };
+		EAE8DDED1F7D85E20039CDDF /* RegistroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		EAE8DDEF1F7D8A060039CDDF /* HistorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorialViewController.swift; sourceTree = "<group>"; };
+		EAE8DDF11F7D9C5F0039CDDF /* PrincipalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrincipalViewController.swift; sourceTree = "<group>"; };
+		EAE8DDF31F7DAF420039CDDF /* PerfilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilesViewController.swift; sourceTree = "<group>"; };
+		EAE8DDF51F7DB1C10039CDDF /* PerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		EAE8DDF71F7DB2CA0039CDDF /* RecetasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecetasViewController.swift; sourceTree = "<group>"; };
+		EAE8DDF91F7DB4040039CDDF /* modiificarRecetaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modiificarRecetaViewController.swift; sourceTree = "<group>"; };
+		EAE8DDFB1F7DBA830039CDDF /* historialTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = historialTableViewCell.swift; sourceTree = "<group>"; };
+		EAE8DDFD1F7DBD090039CDDF /* RecetasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecetasTableViewCell.swift; sourceTree = "<group>"; };
+		EAE8DDFF1F7DBFB30039CDDF /* principalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = principalTableViewCell.swift; sourceTree = "<group>"; };
+		EAE8DE011F7DC2760039CDDF /* PerfilesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +135,17 @@
 				EA0748C61F6AE76F00A39860 /* Info.plist */,
 				EA0748BE1F6AE76F00A39860 /* MediKit.xcdatamodeld */,
 				EA0748E81F6AEE8800A39860 /* usuario.swift */,
+				EAE8DDED1F7D85E20039CDDF /* RegistroViewController.swift */,
+				EAE8DDEF1F7D8A060039CDDF /* HistorialViewController.swift */,
+				EAE8DDF11F7D9C5F0039CDDF /* PrincipalViewController.swift */,
+				EAE8DDF31F7DAF420039CDDF /* PerfilesViewController.swift */,
+				EAE8DDF51F7DB1C10039CDDF /* PerfilViewController.swift */,
+				EAE8DDF71F7DB2CA0039CDDF /* RecetasViewController.swift */,
+				EAE8DDF91F7DB4040039CDDF /* modiificarRecetaViewController.swift */,
+				EAE8DDFB1F7DBA830039CDDF /* historialTableViewCell.swift */,
+				EAE8DDFD1F7DBD090039CDDF /* RecetasTableViewCell.swift */,
+				EAE8DDFF1F7DBFB30039CDDF /* principalTableViewCell.swift */,
+				EAE8DE011F7DC2760039CDDF /* PerfilesTableViewCell.swift */,
 			);
 			path = MediKit;
 			sourceTree = "<group>";
@@ -270,9 +303,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE8DDF41F7DAF420039CDDF /* PerfilesViewController.swift in Sources */,
+				EAE8DDFC1F7DBA830039CDDF /* historialTableViewCell.swift in Sources */,
+				EAE8DDFA1F7DB4040039CDDF /* modiificarRecetaViewController.swift in Sources */,
 				EA0748E91F6AEE8800A39860 /* usuario.swift in Sources */,
+				EAE8DDEE1F7D85E20039CDDF /* RegistroViewController.swift in Sources */,
+				EAE8DDF61F7DB1C10039CDDF /* PerfilViewController.swift in Sources */,
+				EAE8DE001F7DBFB30039CDDF /* principalTableViewCell.swift in Sources */,
+				EAE8DDFE1F7DBD090039CDDF /* RecetasTableViewCell.swift in Sources */,
+				EAE8DDF81F7DB2CA0039CDDF /* RecetasViewController.swift in Sources */,
 				EA0748BA1F6AE76F00A39860 /* ViewController.swift in Sources */,
 				EA0748B81F6AE76F00A39860 /* AppDelegate.swift in Sources */,
+				EAE8DDF01F7D8A060039CDDF /* HistorialViewController.swift in Sources */,
+				EAE8DDF21F7D9C5F0039CDDF /* PrincipalViewController.swift in Sources */,
+				EAE8DE021F7DC2760039CDDF /* PerfilesTableViewCell.swift in Sources */,
 				EA0748C01F6AE76F00A39860 /* MediKit.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

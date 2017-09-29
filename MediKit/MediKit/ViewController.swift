@@ -22,6 +22,13 @@ class ViewController: UIViewController {
        
     }
     
-
+    @IBAction func entrar(_ sender: AnyObject) {
+    }
+    
+    @IBAction func facebook(_ sender: AnyObject) {
+    }
+    @IBAction func google(_ sender: AnyObject) {
+    }
+    
 
 }  

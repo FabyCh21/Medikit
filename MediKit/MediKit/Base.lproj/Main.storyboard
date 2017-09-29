@@ -44,6 +44,9 @@
                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="facebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cms-Ad-srY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5F-kH-8Gx" customClass="usuario" customModule="MediKit" customModuleProvider="target">
                                 <frame key="frameInset" minX="225" minY="510" width="36" height="35"/>
@@ -64,6 +67,9 @@
                                         <real key="value" value="18"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="google:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fjd-Bz-CEM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bNl-4x-a2a" customClass="usuario" customModule="MediKit" customModuleProvider="target">
                                 <frame key="frameInset" minX="68" minY="336" width="255" height="31"/>
@@ -91,6 +97,9 @@
                                         <color key="value" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="entrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="41P-hm-WAL"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8EN-gR-Pje">
                                 <frame key="frameInset" minX="80" minY="447" width="94" height="2"/>
@@ -182,11 +191,10 @@
             </objects>
             <point key="canvasLocation" x="-604" y="-725"/>
         </scene>
-        <!--View Controller-->
+        <!--Perfil View Controller-->
         <scene sceneID="elP-vA-hr3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GJf-Je-pMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="muq-vs-XUT" sceneMemberID="viewController">
+                <viewController id="muq-vs-XUT" customClass="PerfilViewController" customModule="MediKit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EUm-Gs-wgg"/>
                         <viewControllerLayoutGuide type="bottom" id="a7p-yx-Jvm"/>
@@ -221,6 +229,9 @@
                                         <color key="value" red="0.1298069358" green="0.37626969809999999" blue="0.57979112860000004" alpha="0.94488441779999999" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="modificarPerfil:" destination="muq-vs-XUT" eventType="touchUpInside" id="mIn-vL-rXk"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha de Nacimiento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trP-cm-rgH">
                                 <frame key="frameInset" minX="60" minY="174" width="170" height="21"/>
@@ -295,14 +306,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="fechaNacimiento" destination="2fp-vq-aZ3" id="amP-jA-gNd"/>
+                        <outlet property="nombreUsuario" destination="nS2-wf-hkH" id="sjF-ao-RfT"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GJf-Je-pMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3309.5999999999999" y="76.911544227886068"/>
         </scene>
         <!--Recetas-->
         <scene sceneID="Qvw-YZ-8sK">
             <objects>
-                <viewController id="Fy5-3J-i0b" sceneMemberID="viewController">
+                <viewController id="Fy5-3J-i0b" customClass="RecetasViewController" customModule="MediKit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="clX-IG-Dba"/>
                         <viewControllerLayoutGuide type="bottom" id="yYt-9U-Mik"/>
@@ -329,11 +345,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aEa-dC-JPf">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aEa-dC-JPf" customClass="RecetasTableViewCell" customModule="MediKit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aEa-dC-JPf" id="a9O-LZ-zT9">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre Medicamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Eu-EG-wWs">
@@ -354,6 +370,9 @@
                                                     <frame key="frameInset" minX="310" minY="14" width="12" height="22"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" image="delete"/>
+                                                    <connections>
+                                                        <action selector="borrar:" destination="aEa-dC-JPf" eventType="touchUpInside" id="TtR-Yo-hHG"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qht-7K-rvK">
                                                     <frame key="frameInset" minX="337" minY="14" width="16" height="22"/>
@@ -365,6 +384,11 @@
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="hora" destination="8jl-Nh-wef" id="tpa-EM-gKQ"/>
+                                            <outlet property="nombreMedicamento" destination="0Eu-EG-wWs" id="eRx-cT-DVg"/>
+                                            <outlet property="receta" destination="qht-7K-rvK" id="nRp-zv-X96"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -376,6 +400,128 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aut-IY-Dly" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4104.8000000000002" y="76.911544227886068"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="z4r-vk-XWu">
+            <objects>
+                <viewController id="Nvz-dx-6eQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ktg-B2-Fa5"/>
+                        <viewControllerLayoutGuide type="bottom" id="fPt-4g-6jO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tsb-KS-gX1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre de la presentación" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SNl-e0-Nf0">
+                                <frame key="frameInset" minX="62" minY="184" width="251" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Descripción" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FRF-JH-OVi">
+                                <frame key="frameInset" minX="62" minY="256" width="251" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.1298069358" green="0.37626969809999999" blue="0.57979112860000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfN-qD-oy5" customClass="usuario" customModule="MediKit" customModuleProvider="target">
+                                <frame key="frameInset" minX="62" minY="408" width="251" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" red="0.1298069358" green="0.37626969809999999" blue="0.57979112860000004" alpha="0.94488441779999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Modificar Presentación"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.1298069358" green="0.37626969809999999" blue="0.57979112860000004" alpha="0.94488441779999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q9U-U0-S5v">
+                                <frame key="frameInset" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Modificar Presentación" id="17U-YZ-Vgx"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nzy-2A-FFO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3422" y="1485"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mcW-RM-1T4">
+            <objects>
+                <viewController id="Wfz-f6-dTb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YWR-JM-qrA"/>
+                        <viewControllerLayoutGuide type="bottom" id="ysn-4K-OO3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="daM-NO-ywK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EWd-eR-VKU">
+                                <frame key="frameInset" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Agregar Presentación" id="v3g-Me-WNj">
+                                        <barButtonItem key="leftBarButtonItem" image="Back" id="dfv-cl-sgs"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre de la presentación" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W3H-uG-oCn">
+                                <frame key="frameInset" minX="62" minY="206" width="251" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Descripción" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hv7-Xb-n17">
+                                <frame key="frameInset" minX="62" minY="278" width="251" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.1298069358" green="0.37626969809999999" blue="0.57979112860000004" alpha="0.94488441779999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAt-Ej-dFG" customClass="usuario" customModule="MediKit" customModuleProvider="target">
+                                <frame key="frameInset" minX="62" minY="430" width="251" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" red="0.1298069358" green="0.37626969809999999" blue="0.57979112860000004" alpha="0.94488441779999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Agregar Presentación"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.1298069358" green="0.37626969809999999" blue="0.57979112860000004" alpha="0.94488441779999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W97-4b-5od" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3421.5999999999999" y="790.25487256371821"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hj7-0G-TfU">
@@ -399,32 +545,33 @@
                                 </items>
                             </navigationBar>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="JK5-BL-BAy">
-                                <frame key="frameInset" minX="46" minY="205" height="147" maxX="69"/>
+                                <frame key="frameInset" minX="53" minY="253" height="101" maxX="73"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="528241750.29337299">
                                     <!--2017-09-27 21:49:10 +0000-->
                                 </date>
                             </datePicker>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kjr-hu-p56">
-                                <frame key="frameInset" minX="246" minY="414" width="60" height="30"/>
+                                <frame key="frameInset" minX="253" minY="400" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Omk-3c-vQj">
-                                <frame key="frameInset" minX="257" minY="366" width="51" height="31"/>
+                                <frame key="frameInset" minX="264" minY="352" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.1298069358" green="0.37626969809999999" blue="0.57979112860000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cantidad de días:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f29-7I-wlY">
-                                <frame key="frameInset" minX="53" minY="423" width="129" height="21"/>
+                                <frame key="frameInset" minX="60" minY="409" width="129" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42r-e2-DVK" customClass="usuario" customModule="MediKit" customModuleProvider="target">
-                                <frame key="frameInset" minX="53" minY="517" width="253" height="30"/>
+                                <frame key="frameInset" minX="60" minY="542" width="257" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Agregar Receta">
                                     <color key="titleColor" red="0.1298069358" green="0.37626969809999999" blue="0.57979112860000004" alpha="0.94488441779999999" colorSpace="custom" customColorSpace="sRGB"/>
@@ -441,56 +588,81 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hora de consumo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tP-iK-U99">
-                                <frame key="frameInset" minX="45" minY="184" width="177" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Es una enfermedad crónica ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgf-Vx-MAE">
-                                <frame key="frameInset" minX="53" minY="376" width="198" height="21"/>
+                                <frame key="frameInset" minX="60" minY="362" width="198" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cantidad de medicamento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Liq-Et-IhY">
-                                <frame key="frameInset" minX="53" minY="471" width="187" height="21"/>
+                                <frame key="frameInset" minX="60" minY="457" width="187" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NHU-6F-qXi">
-                                <frame key="frameInset" minX="246" minY="462" width="60" height="30"/>
+                                <frame key="frameInset" minX="253" minY="448" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" placeholder="Nombre del Medicamento" translatesAutoresizingMaskIntoConstraints="NO" id="BFY-Zi-F4D">
-                                <frame key="frameInset" minX="46" minY="102" height="44" maxX="69"/>
+                                <frame key="frameInset" minX="52" minY="57" height="44" maxX="59"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No encontró el medicamento ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WE6-La-pXh">
-                                <frame key="frameInset" minX="53" minY="572" width="213" height="21"/>
+                                <frame key="frameInset" minX="60" minY="587" width="213" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUu-WR-59P">
-                                <frame key="frameInset" minX="257" minY="565" width="53" height="30"/>
+                                <frame key="frameInset" minX="264" minY="580" width="53" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="tintColor" red="0.1298069358" green="0.37626969809999999" blue="0.57979112860000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Ver más"/>
+                                <state key="normal" title="Agregar"/>
                                 <connections>
                                     <segue destination="w11-Tp-OnN" kind="show" id="B9p-RA-dg2"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Frecuencia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSM-EV-UHZ">
+                                <frame key="frameInset" minX="60" minY="502" width="187" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pqO-An-Ivp">
+                                <frame key="frameInset" minX="255" minY="493" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FY1-Y4-R54">
+                                <frame key="frameInset" minX="60" minY="139" height="88" maxX="62"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Presentación del Medicamento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHJ-g2-4Pq">
+                                <frame key="frameInset" minX="60" minY="110" width="213" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hora de consumo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tP-iK-U99">
+                                <frame key="frameInset" minX="60" minY="235" width="177" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -499,10 +671,10 @@
             </objects>
             <point key="canvasLocation" x="4104.8000000000002" y="791.15442278860576"/>
         </scene>
-        <!--View Controller-->
+        <!--Modiificar Receta View Controller-->
         <scene sceneID="hOv-zS-ikl">
             <objects>
-                <viewController id="M2c-al-kS5" sceneMemberID="viewController">
+                <viewController id="M2c-al-kS5" customClass="modiificarRecetaViewController" customModule="MediKit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kzv-qg-tmX"/>
                         <viewControllerLayoutGuide type="bottom" id="ybC-tr-iPV"/>
@@ -515,43 +687,42 @@
                                 <frame key="frameInset" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Recetas" id="a4H-Wi-Kkt">
+                                    <navigationItem title="Modificar Receta" id="a4H-Wi-Kkt">
                                         <barButtonItem key="leftBarButtonItem" image="Back" id="25u-gR-1Oy"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" placeholder="Nombre del medicamento" translatesAutoresizingMaskIntoConstraints="NO" id="0YK-MG-aX2">
-                                <frame key="frameInset" minX="44" minY="55" height="44" maxX="36"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="1Ao-M7-7Z0">
-                                <frame key="frameInset" minX="52" minY="130" height="147" maxX="63"/>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="RBb-Fc-RjV">
+                                <frame key="frameInset" minX="55" minY="261" height="101" maxX="71"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="528241750.29337299">
                                     <!--2017-09-27 21:49:10 +0000-->
                                 </date>
                             </datePicker>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kUm-1O-YKO">
-                                <frame key="frameInset" minX="252" minY="339" width="60" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Doz-a0-N7z">
+                                <frame key="frameInset" minX="255" minY="408" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2K5-8C-ISc">
-                                <frame key="frameInset" minX="263" minY="291" width="51" height="31"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LmQ-jb-Y7E">
+                                <frame key="frameInset" minX="266" minY="360" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.1298069358" green="0.37626969809999999" blue="0.57979112860000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="enfermedadCronica:" destination="M2c-al-kS5" eventType="valueChanged" id="78f-a2-PlQ"/>
+                                </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cantidad de días:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVS-UT-8JG">
-                                <frame key="frameInset" minX="59" minY="348" width="129" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cantidad de días:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZ3-tu-At4">
+                                <frame key="frameInset" minX="62" minY="417" width="129" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLz-Sq-cCA" customClass="usuario" customModule="MediKit" customModuleProvider="target">
-                                <frame key="frameInset" minX="59" minY="442" width="253" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXJ-lL-Jya" customClass="usuario" customModule="MediKit" customModuleProvider="target">
+                                <frame key="frameInset" minX="62" minY="550" width="257" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Modificar Receta">
                                     <color key="titleColor" red="0.1298069358" green="0.37626969809999999" blue="0.57979112860000004" alpha="0.94488441779999999" colorSpace="custom" customColorSpace="sRGB"/>
@@ -567,38 +738,79 @@
                                         <color key="value" red="0.1298069358" green="0.37626969809999999" blue="0.57979112860000004" alpha="0.94488441779999999" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="modificarReceta:" destination="M2c-al-kS5" eventType="touchUpInside" id="Eg6-0M-40u"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hora de consumo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYv-J1-bJb">
-                                <frame key="frameInset" minX="51" minY="109" width="177" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Es una enfermedad crónica ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGv-vm-IfL">
-                                <frame key="frameInset" minX="59" minY="301" width="198" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hora de consumo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Isc-xQ-F83">
+                                <frame key="frameInset" minX="62" minY="243" width="177" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cantidad de medicamento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2G-jn-vv6">
-                                <frame key="frameInset" minX="59" minY="396" width="187" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Es una enfermedad crónica ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lct-Ol-m0t">
+                                <frame key="frameInset" minX="62" minY="370" width="198" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f8K-05-EKY">
-                                <frame key="frameInset" minX="252" minY="387" width="60" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cantidad de medicamento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="014-KW-o4O">
+                                <frame key="frameInset" minX="62" minY="465" width="187" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KDg-bS-TWn">
+                                <frame key="frameInset" minX="255" minY="456" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" placeholder="Nombre del Medicamento" translatesAutoresizingMaskIntoConstraints="NO" id="Mfd-qq-716">
+                                <frame key="frameInset" minX="54" minY="65" height="44" maxX="57"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Frecuencia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ag-yC-8B7">
+                                <frame key="frameInset" minX="62" minY="510" width="187" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m0h-Qu-6ec">
+                                <frame key="frameInset" minX="257" minY="501" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5oF-i9-tTB">
+                                <frame key="frameInset" minX="62" minY="147" height="88" maxX="60"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Presentación del Medicamento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhU-IH-LGZ">
+                                <frame key="frameInset" minX="62" minY="118" width="213" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="cantMedicamento" destination="KDg-bS-TWn" id="Qsm-sB-aFJ"/>
+                        <outlet property="cantidadDias" destination="Doz-a0-N7z" id="dBW-S4-r4s"/>
+                        <outlet property="frecuencia" destination="m0h-Qu-6ec" id="QCk-o8-Qq0"/>
+                        <outlet property="horaConsumo" destination="RBb-Fc-RjV" id="yqd-vZ-aDR"/>
+                        <outlet property="nombreMedicamento" destination="Mfd-qq-716" id="6MM-oA-Qrv"/>
+                        <outlet property="presentacion" destination="5oF-i9-tTB" id="rPm-JL-IyV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1MU-sv-yGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -639,7 +851,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s6V-Wo-1cf" id="4BE-AP-7Aj">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre del Medicamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mf2-5H-GHb">
@@ -875,7 +1087,7 @@
         <!--Perfiles-->
         <scene sceneID="IJG-dX-Nbe">
             <objects>
-                <viewController id="iCh-HI-tH0" sceneMemberID="viewController">
+                <viewController id="iCh-HI-tH0" customClass="PerfilesViewController" customModule="MediKit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uqm-hi-Bcj"/>
                         <viewControllerLayoutGuide type="bottom" id="mVf-EN-Ujy"/>
@@ -904,11 +1116,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="icf-EU-Sev">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="icf-EU-Sev" customClass="PerfilesTableViewCell" customModule="MediKit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="icf-EU-Sev" id="PSh-xZ-F9w">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre de usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9UO-XN-kga">
@@ -923,6 +1135,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button" image="next"/>
                                                     <connections>
+                                                        <action selector="perfil:" destination="icf-EU-Sev" eventType="touchUpInside" id="zJR-ju-HZI"/>
                                                         <segue destination="muq-vs-XUT" kind="show" id="1X5-r5-cPC"/>
                                                     </connections>
                                                 </button>
@@ -930,9 +1143,15 @@
                                                     <frame key="frameInset" minX="318" minY="10" width="16" height="22"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button" image="delete"/>
+                                                    <connections>
+                                                        <action selector="borrar:" destination="icf-EU-Sev" eventType="touchUpInside" id="rWv-sX-USG"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nombreUsuario" destination="9UO-XN-kga" id="13Q-zb-snU"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -948,7 +1167,7 @@
         <!--Home-->
         <scene sceneID="hKo-Ia-EM5">
             <objects>
-                <viewController id="DL5-QK-d19" sceneMemberID="viewController">
+                <viewController id="DL5-QK-d19" customClass="PrincipalViewController" customModule="MediKit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KW2-4A-ps0"/>
                         <viewControllerLayoutGuide type="bottom" id="CVR-Bi-GXq"/>
@@ -994,11 +1213,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="45" id="gmg-6m-OYq">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="45" id="gmg-6m-OYq" customClass="principalTableViewCell" customModule="MediKit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="303" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gmg-6m-OYq" id="HbA-zc-obF">
-                                            <frame key="frameInset" width="303" height="44"/>
+                                            <frame key="frameInset" width="303" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Perfil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQq-AQ-wQp">
@@ -1024,6 +1243,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="hora" destination="ZAf-K9-Qi8" id="JZX-6r-hn0"/>
+                                            <outlet property="medicamento" destination="Z8j-Ak-yNI" id="HNL-tU-DAF"/>
+                                            <outlet property="perfil" destination="PQq-AQ-wQp" id="dZa-nz-OKF"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -1039,15 +1263,21 @@
                         <color key="tintColor" red="0.1298069358" green="0.37626969809999999" blue="0.57979112860000004" alpha="0.94488441779999999" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="Principal" id="1J9-io-77V"/>
+                    <connections>
+                        <outlet property="correo" destination="9s0-mV-vgL" id="Ofb-qo-eSr"/>
+                        <outlet property="fechaNacimiento" destination="rwb-0B-sgH" id="Uzk-6U-tgc"/>
+                        <outlet property="id" destination="AHR-kE-MAE" id="6ks-K1-SWs"/>
+                        <outlet property="nombreUsuario" destination="A4h-ht-uFN" id="Vpo-9q-bhw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pik-Rn-59I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3327" y="-725"/>
+            <point key="canvasLocation" x="3332" y="-725"/>
         </scene>
         <!--Historial-->
         <scene sceneID="fAs-Qg-lLg">
             <objects>
-                <viewController id="0Ap-Sl-NjL" sceneMemberID="viewController">
+                <viewController id="0Ap-Sl-NjL" customClass="HistorialViewController" customModule="MediKit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AiI-nK-Yjx"/>
                         <viewControllerLayoutGuide type="bottom" id="5Rf-O1-E0r"/>
@@ -1056,16 +1286,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FHC-82-RAh">
-                                <frame key="frameInset" minY="44" width="375" height="574"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="48" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FHC-82-RAh">
+                                <frame key="frameInset" minY="94" width="375" height="524"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="arw-Cq-P71">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="48" id="arw-Cq-P71" customClass="historialTableViewCell" customModule="MediKit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="48"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="arw-Cq-P71" id="Yne-8f-43u">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="47"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Medicamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esH-Sp-oZ7">
@@ -1098,11 +1328,24 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="diaCell" destination="7qE-eS-hTG" id="UIz-iy-hAa"/>
+                                            <outlet property="estadoCell" destination="Kk4-NU-Pq9" id="Ll4-aP-yOO"/>
+                                            <outlet property="horaCell" destination="oWn-H5-nRZ" id="z4t-sf-Ulr"/>
+                                            <outlet property="medicamentoCell" destination="esH-Sp-oZ7" id="wkM-8q-WNX"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wkP-4j-9F9">
+                                <frame key="frameInset" minX="-6" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Historial" id="gLZ-Sl-2WT"/>
+                                </items>
+                            </navigationBar>
                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jTO-LO-7be">
-                                <frame key="frameInset" height="44"/>
+                                <frame key="frameInset" minY="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="0.1298069358" green="0.37626969809999999" blue="0.57979112860000004" alpha="0.94488441779999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1111,10 +1354,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Historial" image="historial" id="IDD-OM-dqX"/>
+                    <connections>
+                        <outlet property="search" destination="jTO-LO-7be" id="hZ7-2B-cnF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q1L-6A-AkZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1468" y="76.911544227886068"/>
+            <point key="canvasLocation" x="1463.2" y="100.29985007496252"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="zvN-ZK-GyF">
@@ -1136,10 +1382,10 @@
             </objects>
             <point key="canvasLocation" x="2574" y="-725"/>
         </scene>
-        <!--View Controller-->
+        <!--Registro-->
         <scene sceneID="Rpn-a4-lr8">
             <objects>
-                <viewController id="bVp-rw-tO7" sceneMemberID="viewController">
+                <viewController id="bVp-rw-tO7" customClass="RegistroViewController" customModule="MediKit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="06b-js-6pR"/>
                         <viewControllerLayoutGuide type="bottom" id="onp-Kj-4YY"/>
@@ -1166,13 +1412,7 @@
                                 <frame key="frameInset" minX="46" minY="120" width="282" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo Eletrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rQY-EE-Zsa">
-                                <frame key="frameInset" minX="46" minY="177" width="282" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha de nacimiento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thp-2Y-VqZ">
@@ -1201,17 +1441,33 @@
                                         <color key="value" red="0.1298069358" green="0.37626969809999999" blue="0.57979112860000004" alpha="0.94488441779999999" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="registrarse:" destination="bVp-rw-tO7" eventType="touchUpInside" id="T58-cE-N79"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo Eletrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rQY-EE-Zsa">
+                                <frame key="frameInset" minX="46" minY="178" width="282" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="9k4-Yy-aVK">
+                    <navigationItem key="navigationItem" title="Registro" id="9k4-Yy-aVK">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="Back" id="JPD-aX-m95">
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="showDetail" id="NhU-7J-Obr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="correoElectronico" destination="rQY-EE-Zsa" id="4od-hk-GYT"/>
+                        <outlet property="fechaNacimiento" destination="9KJ-oU-InG" id="oqG-VF-Y7b"/>
+                        <outlet property="identificacion" destination="FPg-p8-I8t" id="5Ks-7v-nrL"/>
+                        <outlet property="nombreaUsuario" destination="6dJ-R3-Myy" id="078-I8-oFL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O4m-qW-kw4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1248,6 +1504,6 @@
         <image name="plus" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FIl-r4-cIR"/>
+        <segue reference="EkF-R1-E0p"/>
     </inferredMetricsTieBreakers>
 </document>
