@@ -11,7 +11,7 @@ import UIKit
 class PerfilViewController: UIViewController {
     @IBOutlet weak var nombreUsuario: UITextField!
     @IBOutlet weak var fechaNacimiento: UIDatePicker!
-    var currentPerfil : perfil?
+    var currentPerfil : Perfil?
     override func viewDidLoad() {
         super.viewDidLoad()
 
