@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		382D93D2C756A820696CEF85 /* Pods_MediKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946273CA0B0752033F0C61D0 /* Pods_MediKit.framework */; };
 		6FDBC33E20C0DDC556727F1B /* Pods_MediKitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61EA20DDA2FBD62012DE88B3 /* Pods_MediKitUITests.framework */; };
+		835405651FA1623A004B9D5C /* MedicamentosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835405641FA1623A004B9D5C /* MedicamentosTableViewController.swift */; };
+		835405671FA1662A004B9D5C /* MedicamentosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835405661FA1662A004B9D5C /* MedicamentosTableViewCell.swift */; };
+		8354056D1FA16A3F004B9D5C /* MedicamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8354056C1FA16A3F004B9D5C /* MedicamentoViewController.swift */; };
 		835AACD01F95177700C07541 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835AACC31F9516AA00C07541 /* Alamofire.framework */; };
 		835AACD11F95177700C07541 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 835AACC31F9516AA00C07541 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		835AACD61F9518E100C07541 /* CONSTANTES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835AACD51F9518E100C07541 /* CONSTANTES.swift */; };
@@ -135,6 +138,9 @@
 		61EA20DDA2FBD62012DE88B3 /* Pods_MediKitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediKitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6738C425B994247307B33871 /* Pods-MediKitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediKitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MediKitUITests/Pods-MediKitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7041172ED58D894D9533B20C /* Pods_MediKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		835405641FA1623A004B9D5C /* MedicamentosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicamentosTableViewController.swift; sourceTree = "<group>"; };
+		835405661FA1662A004B9D5C /* MedicamentosTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicamentosTableViewCell.swift; sourceTree = "<group>"; };
+		8354056C1FA16A3F004B9D5C /* MedicamentoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicamentoViewController.swift; sourceTree = "<group>"; };
 		835AACB71F9516AA00C07541 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
 		835AACD51F9518E100C07541 /* CONSTANTES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CONSTANTES.swift; sourceTree = "<group>"; };
 		835AACD71F9519B300C07541 /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
@@ -265,6 +271,9 @@
 				EAE8DDEF1F7D8A060039CDDF /* HistorialViewController.swift */,
 				EAE8DDED1F7D85E20039CDDF /* RegistroViewController.swift */,
 				EA0748E81F6AEE8800A39860 /* botonCircular.swift */,
+				835405641FA1623A004B9D5C /* MedicamentosTableViewController.swift */,
+				835405661FA1662A004B9D5C /* MedicamentosTableViewCell.swift */,
+				8354056C1FA16A3F004B9D5C /* MedicamentoViewController.swift */,
 			);
 			name = Controladores;
 			sourceTree = "<group>";
@@ -429,6 +438,7 @@
 				TargetAttributes = {
 					EA0748B31F6AE76E00A39860 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = EG4SGAMSTW;
 						ProvisioningStyle = Automatic;
 					};
 					EA0748CA1F6AE77000A39860 = {
@@ -713,12 +723,15 @@
 				EAE8DDFA1F7DB4040039CDDF /* modiificarRecetaViewController.swift in Sources */,
 				EAFB4FF81FA1391100F961FD /* Medicamento.swift in Sources */,
 				EAFB4FFA1FA1394000F961FD /* Notificacion.swift in Sources */,
+				835405671FA1662A004B9D5C /* MedicamentosTableViewCell.swift in Sources */,
 				EA0748E91F6AEE8800A39860 /* botonCircular.swift in Sources */,
 				EAE8DDEE1F7D85E20039CDDF /* RegistroViewController.swift in Sources */,
 				EAE8DDF61F7DB1C10039CDDF /* PerfilViewController.swift in Sources */,
+				8354056D1FA16A3F004B9D5C /* MedicamentoViewController.swift in Sources */,
 				EA647F0A1FA04D9700179019 /* Globals.swift in Sources */,
 				EAFB50031FA13CA000F961FD /* Usuario.swift in Sources */,
 				EAFB4FFC1FA1395C00F961FD /* Presentacion.swift in Sources */,
+				835405651FA1623A004B9D5C /* MedicamentosTableViewController.swift in Sources */,
 				EAE8DE001F7DBFB30039CDDF /* principalTableViewCell.swift in Sources */,
 				EA3941861F9949A1006D84F9 /* Perfil.swift in Sources */,
 				EAE8DDFE1F7DBD090039CDDF /* RecetasTableViewCell.swift in Sources */,
@@ -894,6 +907,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = EG4SGAMSTW;
 				INFOPLIST_FILE = MediKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TEC.MediKit;
@@ -908,6 +923,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = EG4SGAMSTW;
 				INFOPLIST_FILE = MediKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TEC.MediKit;
