@@ -1,87 +1,87 @@
 
 /* Class = "UILabel"; text = "Cantidad de medicamento:"; ObjectID = "014-KW-o4O"; */
-"014-KW-o4O.text" = "Amount of medicine:";
+"014-KW-o4O.text" = "Cantidad de medicamento:";
 
 /* Class = "UILabel"; text = "Nombre Medicamento"; ObjectID = "0Eu-EG-wWs"; */
-"0Eu-EG-wWs.text" = "Medicine's name";
+"0Eu-EG-wWs.text" = "Nombre del medicamento";
 
 /* Class = "UINavigationItem"; title = "Modificar Presentación"; ObjectID = "17U-YZ-Vgx"; */
-"17U-YZ-Vgx.title" = "Modify medication";
+"17U-YZ-Vgx.title" = "Modificar medicamento";
 
 /* Class = "UITabBarItem"; title = "Home"; ObjectID = "1J9-io-77V"; */
-"1J9-io-77V.title" = "Home";
+"1J9-io-77V.title" = "Inicio";
 
 /* Class = "UILabel"; text = "Hora de consumo:"; ObjectID = "1tP-iK-U99"; */
 "1tP-iK-U99.text" = "Hora de consumo:";
 
 /* Class = "UIButton"; normalTitle = "Agregar Receta"; ObjectID = "42r-e2-DVK"; */
-"42r-e2-DVK.normalTitle" = "Add prescription";
+"42r-e2-DVK.normalTitle" = "Agregar receta";
 
 /* Class = "UINavigationItem"; title = "Recetas"; ObjectID = "5qh-Ld-dDc"; */
-"5qh-Ld-dDc.title" = "Prescription";
+"5qh-Ld-dDc.title" = "Receta";
 
 /* Class = "UITextField"; placeholder = "Contraseña"; ObjectID = "6FK-yJ-Eib"; */
-"6FK-yJ-Eib.placeholder" = "Password";
+"6FK-yJ-Eib.placeholder" = "Contraseña";
 
 /* Class = "UITextField"; placeholder = "Nombre de usuario"; ObjectID = "6dJ-R3-Myy"; */
-"6dJ-R3-Myy.placeholder" = "User's name";
+"6dJ-R3-Myy.placeholder" = "Nombre de usuario";
 
 /* Class = "UINavigationItem"; title = "Agregar Medicamento"; ObjectID = "6u7-El-bVa"; */
-"6u7-El-bVa.title" = "Add medicine";
+"6u7-El-bVa.title" = "Agregar medicamento";
 
 /* Class = "UITextField"; placeholder = "Identificación"; ObjectID = "7Lz-9E-Rdg"; */
 "7Lz-9E-Rdg.placeholder" = "ID";
 
 /* Class = "UILabel"; text = "Frecuencia"; ObjectID = "7ag-yC-8B7"; */
-"7ag-yC-8B7.text" = "Frecuency";
+"7ag-yC-8B7.text" = "Frecuencia";
 
 /* Class = "UILabel"; text = "Día"; ObjectID = "7qE-eS-hTG"; */
-"7qE-eS-hTG.text" = "Day";
+"7qE-eS-hTG.text" = "Día";
 
 /* Class = "UILabel"; text = "Hora"; ObjectID = "8jl-Nh-wef"; */
-"8jl-Nh-wef.text" = "Time";
+"8jl-Nh-wef.text" = "Hora";
 
 /* Class = "UILabel"; text = "¿No tienes una cuenta?"; ObjectID = "96m-dx-RVX"; */
-"96m-dx-RVX.text" = "¿Don't have an account?";
+"96m-dx-RVX.text" = "¿No tiene una cuenta?";
 
 /* Class = "UILabel"; text = "Nombre de usuario"; ObjectID = "9UO-XN-kga"; */
-"9UO-XN-kga.text" = "User's name";
+"9UO-XN-kga.text" = "Nombre de usuario";
 
 /* Class = "UIButton"; normalTitle = "Regístrate."; ObjectID = "9Vf-6h-S1B"; */
-"9Vf-6h-S1B.normalTitle" = "Sign up";
+"9Vf-6h-S1B.normalTitle" = "Registro";
 
 /* Class = "UINavigationItem"; title = "Registro"; ObjectID = "9k4-Yy-aVK"; */
-"9k4-Yy-aVK.title" = "Sign up";
+"9k4-Yy-aVK.title" = "Registro";
 
 /* Class = "UILabel"; text = "Correo Electrónico"; ObjectID = "9s0-mV-vgL"; */
-"9s0-mV-vgL.text" = "Email";
+"9s0-mV-vgL.text" = "Correo electrónico";
 
 /* Class = "UILabel"; text = "Nombre de Usuario"; ObjectID = "A4h-ht-uFN"; */
-"A4h-ht-uFN.text" = "User's name";
+"A4h-ht-uFN.text" = "Nombre de usuario";
 
 /* Class = "UILabel"; text = "Identificación"; ObjectID = "AHR-kE-MAE"; */
 "AHR-kE-MAE.text" = "ID";
 
 /* Class = "UISearchBar"; placeholder = "Nombre del Medicamento"; ObjectID = "BFY-Zi-F4D"; */
-"BFY-Zi-F4D.placeholder" = "Medicine's name";
+"BFY-Zi-F4D.placeholder" = "Nombre del medicamento";
 
 /* Class = "UILabel"; text = "Cantidad de días:"; ObjectID = "CZ3-tu-At4"; */
-"CZ3-tu-At4.text" = "Number of days";
+"CZ3-tu-At4.text" = "Numero de días";
 
 /* Class = "UITextField"; placeholder = "Nombre Genérico"; ObjectID = "Edb-Es-OhB"; */
-"Edb-Es-OhB.placeholder" = "Generic name";
+"Edb-Es-OhB.placeholder" = "Nombre genérico";
 
 /* Class = "UITextField"; placeholder = "Descripción"; ObjectID = "FRF-JH-OVi"; */
-"FRF-JH-OVi.placeholder" = "Description";
+"FRF-JH-OVi.placeholder" = "Descripción";
 
 /* Class = "UIButton"; normalTitle = "Agregar Presentación"; ObjectID = "HAt-Ej-dFG"; */
-"HAt-Ej-dFG.normalTitle" = "Add presentation";
+"HAt-Ej-dFG.normalTitle" = "Agregar presentación";
 
 /* Class = "UIButton"; normalTitle = "Agregar"; ObjectID = "HUu-WR-59P"; */
-"HUu-WR-59P.normalTitle" = "Add";
+"HUu-WR-59P.normalTitle" = "Agregar";
 
 /* Class = "UITabBarItem"; title = "Historial"; ObjectID = "IDD-OM-dqX"; */
-"IDD-OM-dqX.title" = "Medical history";
+"IDD-OM-dqX.title" = "Historial medico";
 
 /* Class = "UILabel"; text = "Hora de consumo:"; ObjectID = "Isc-xQ-F83"; */
 "Isc-xQ-F83.text" = "Hora de consumo:";
@@ -90,79 +90,79 @@
 "JPD-aX-m95.title" = "Item";
 
 /* Class = "UILabel"; text = "Estado"; ObjectID = "Kk4-NU-Pq9"; */
-"Kk4-NU-Pq9.text" = "Status";
+"Kk4-NU-Pq9.text" = "Estado";
 
 /* Class = "UILabel"; text = "Es una enfermedad crónica ?"; ObjectID = "Lct-Ol-m0t"; */
-"Lct-Ol-m0t.text" = "Is it a chronic disease?";
+"Lct-Ol-m0t.text" = "¿Es una enfermedad crónica?";
 
 /* Class = "UILabel"; text = "Cantidad de medicamento:"; ObjectID = "Liq-Et-IhY"; */
-"Liq-Et-IhY.text" = "Amount of medicine:";
+"Liq-Et-IhY.text" = "Cantidad de medicina:";
 
 /* Class = "UILabel"; text = "Presentación del Medicamento:"; ObjectID = "MHJ-g2-4Pq"; */
-"MHJ-g2-4Pq.text" = "Medicine's presentation:";
+"MHJ-g2-4Pq.text" = "Receta del medicamento:";
 
 /* Class = "UILabel"; text = "Nombre del Medicamento"; ObjectID = "Mf2-5H-GHb"; */
-"Mf2-5H-GHb.text" = "Medicine's name";
+"Mf2-5H-GHb.text" = "Nombre del medicamento";
 
 /* Class = "UISearchBar"; placeholder = "Nombre del Medicamento"; ObjectID = "Mfd-qq-716"; */
-"Mfd-qq-716.placeholder" = "Medicine's name";
+"Mfd-qq-716.placeholder" = "Nombre del medicamento";
 
 /* Class = "UITextField"; placeholder = "Descripción"; ObjectID = "PF0-kW-78h"; */
-"PF0-kW-78h.placeholder" = "Description";
+"PF0-kW-78h.placeholder" = "Descripción";
 
 /* Class = "UITabBarItem"; title = "Perfiles"; ObjectID = "PMH-Pb-MSp"; */
-"PMH-Pb-MSp.title" = "Profile";
+"PMH-Pb-MSp.title" = "Perfil";
 
 /* Class = "UILabel"; text = "Perfil"; ObjectID = "PQq-AQ-wQp"; */
-"PQq-AQ-wQp.text" = "Profile";
+"PQq-AQ-wQp.text" = "Perfil";
 
 /* Class = "UIButton"; normalTitle = "Modificar Presentación"; ObjectID = "QfN-qD-oy5"; */
-"QfN-qD-oy5.normalTitle" = "Modify presentation";
+"QfN-qD-oy5.normalTitle" = "Modificar presentación";
 
 /* Class = "UIButton"; normalTitle = "Modificar Medicamento"; ObjectID = "QoO-ZP-2Q9"; */
-"QoO-ZP-2Q9.normalTitle" = "Modify medicine";
+"QoO-ZP-2Q9.normalTitle" = "Modificar presentación";
 
 /* Class = "UITextField"; placeholder = "Correo Electrónico"; ObjectID = "RyB-9v-0uY"; */
-"RyB-9v-0uY.placeholder" = "Email";
+"RyB-9v-0uY.placeholder" = "Correo electrónico";
 
 /* Class = "UITextField"; placeholder = "Nombre de la presentación"; ObjectID = "SNl-e0-Nf0"; */
-"SNl-e0-Nf0.placeholder" = "Presentation's name";
+"SNl-e0-Nf0.placeholder" = "Nombre de la presentación";
 
 /* Class = "UILabel"; text = "Fecha de nacimiento:"; ObjectID = "Thp-2Y-VqZ"; */
-"Thp-2Y-VqZ.text" = "Birth day:";
+"Thp-2Y-VqZ.text" = "Fecha de nacimiento:";
 
 /* Class = "UINavigationItem"; title = "Agregar Receta"; ObjectID = "Tjb-A7-wlZ"; */
-"Tjb-A7-wlZ.title" = "Add prescription";
+"Tjb-A7-wlZ.title" = "Agregar receta";
 
 /* Class = "UITabBarItem"; title = "Recetas"; ObjectID = "Tq4-1P-4YT"; */
-"Tq4-1P-4YT.title" = "Prescriptions";
+"Tq4-1P-4YT.title" = "Recetas";
 
 /* Class = "UINavigationItem"; title = "Modificar Medicamento"; ObjectID = "UUP-NQ-vOI"; */
-"UUP-NQ-vOI.title" = "Modify medicine";
+"UUP-NQ-vOI.title" = "Modificar medicamento";
 
 /* Class = "UILabel"; text = "Frecuencia"; ObjectID = "VSM-EV-UHZ"; */
-"VSM-EV-UHZ.text" = "Frecuency";
+"VSM-EV-UHZ.text" = "Frecuencia";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "VaM-OS-IA4"; */
-"VaM-OS-IA4.normalTitle" = "Button";
+"VaM-OS-IA4.normalTitle" = "Botón";
 
 /* Class = "UILabel"; text = "Iniciar sesión con"; ObjectID = "Vie-ki-WNr"; */
-"Vie-ki-WNr.text" = "Login with";
+"Vie-ki-WNr.text" = "Iniciar sesión con";
 
 /* Class = "UITextField"; placeholder = "Nombre de la presentación"; ObjectID = "W3H-uG-oCn"; */
-"W3H-uG-oCn.placeholder" = "Presentation's name";
+"W3H-uG-oCn.placeholder" = "Nombre de la presentación";
 
 /* Class = "UILabel"; text = "No encontró el medicamento ?"; ObjectID = "WE6-La-pXh"; */
-"WE6-La-pXh.text" = "Did not find the medication?";
+"WE6-La-pXh.text" = "¿No encontró el medicamento?";
 
 /* Class = "UITextField"; placeholder = "Nombre de Usuario"; ObjectID = "Y7I-nr-dtN"; */
-"Y7I-nr-dtN.placeholder" = "User's name";
+"Y7I-nr-dtN.placeholder" = "Nombre de usuario";
 
 /* Class = "UILabel"; text = "Medicamento"; ObjectID = "Z8j-Ak-yNI"; */
-"Z8j-Ak-yNI.text" = "Medicine";
+"Z8j-Ak-yNI.text" = "Medicina";
 
 /* Class = "UILabel"; text = "Hora"; ObjectID = "ZAf-K9-Qi8"; */
-"ZAf-K9-Qi8.text" = "Time";
+"ZAf-K9-Qi8.text" = "Hora";
 
 /* Class = "UIButton"; normalTitle = "Ver Recetas"; ObjectID = "ZFN-c2-GI2"; */
 "ZFN-c2-GI2.normalTitle" = "Ver Recetas";

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Perfil{
+public struct Perfil{
     var nombre : String
     var fechaDeNacimiento: String
     var id: String

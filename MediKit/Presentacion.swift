@@ -10,6 +10,6 @@ import Foundation
 
 struct Presentacion {
     var id: String
-    var nombre: String
-    var descripcion: String
+    var nombrePresentacion: String
+    var descripcionPresentacion: String
 }

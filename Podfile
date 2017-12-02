@@ -2,25 +2,28 @@
 # platform :ios, '9.0'
 
 target 'MediKit' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for MediKit
-  pod 'Alamofire', ''
-  pod 'SwiftyJSON'
-
-  target 'MediKitTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'MediKitUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-  
-  use_frameworks!
-  
-  
-  
+    # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+    use_frameworks!
+    
+    pod 'FacebookCore'
+    pod 'FacebookLogin'
+    pod 'GoogleSignIn'
+    pod 'Google/SignIn'
+    
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+    # Pods for MediKit
+    
+    target 'MediKitTests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
+    
+    target 'MediKitUITests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
+    
 end
+
+

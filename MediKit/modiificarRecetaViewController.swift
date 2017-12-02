@@ -7,39 +7,78 @@
 //
 
 import UIKit
+import Alamofire
 
-class modiificarRecetaViewController: UIViewController {
-
-    @IBOutlet weak var horaConsumo: UIDatePicker!
-    @IBOutlet weak var presentacion: UIPickerView!
-    @IBOutlet weak var nombreMedicamento: UISearchBar!
-    @IBOutlet weak var cantidadDias: UITextField!
-    @IBOutlet weak var cantMedicamento: UITextField!
-    @IBOutlet weak var frecuencia: UITextField!
+class modiificarRecetaViewController: UIViewController , UIPickerViewDelegate, UIPickerViewDataSource  {
+    var currentReceta : Receta?
+    
+    @IBOutlet weak var nombreRecetaTextField: UITextField!
+    @IBOutlet weak var pickerMedicamentos: UIPickerView!
+    @IBOutlet weak var pickerPresentacion: UIPickerView!
+    @IBOutlet weak var usuarioRecetaTextField: UITextField!
+    @IBOutlet weak var presentacionRecetaTextField: UITextField!
+    @IBOutlet weak var cantidadRecetaTextField: UITextField!
+    @IBOutlet weak var frecuenciaRecetaTextField: UITextField!
+    @IBOutlet weak var pickerNotificacion: UIDatePicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    @IBAction func enfermedadCronica(_ sender: AnyObject) {
-    }
-    @IBAction func modificarReceta(_ sender: AnyObject) {
+        nombreRecetaTextField.text! = (self.currentReceta?.nombre)!
+        presentacionRecetaTextField.text! = String(describing: self.currentReceta!.duracionConsumo)
+        frecuenciaRecetaTextField.text! = String(describing: self.currentReceta!.frecuencia)
+        cantidadRecetaTextField.text! = String(describing: self.currentReceta!.cantConsumo)
+        getUsuarioDeLaReceta()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.nombreRecetaTextField.resignFirstResponder()
+        self.usuarioRecetaTextField.resignFirstResponder()
+        self.presentacionRecetaTextField.resignFirstResponder()
+        self.cantidadRecetaTextField.resignFirstResponder()
+        self.frecuenciaRecetaTextField.resignFirstResponder()
     }
-    */
+    
+    func getUsuarioDeLaReceta(){
+        if(self.currentReceta?.idUsuario == self.currentReceta?.idPerfil){
+            let url = Constantes.GETUSUARIOID + (self.currentReceta!.idUsuario)
+            Alamofire.request(url).responseJSON {
+                responseData in
+                if responseData.response?.statusCode == 200{
+                    let value = responseData.result.value
+                    self.usuarioRecetaTextField.text! = JSONParser.parseUsuario(usuariosData: value).nombreUsuario
+                }
+            }
+        }
+        else {
+            for perfil in Globals.instance.perfilLista {
+                if perfil.id == self.currentReceta?.idPerfil{
+                    self.usuarioRecetaTextField.text! = perfil.nombre
+                }
+            }
+        }
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    
+    // The number of columns of data
+    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    // The number of rows of data
+    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        //return pickerData.count
+        return 0
+    }
+    
+    // The data to return for the row and component (column) that's being passed in
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        //return pickerData[row].nombrePresentacion
+        return ""
+    }
 
+    
 }

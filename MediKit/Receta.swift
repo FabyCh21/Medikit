@@ -10,9 +10,14 @@ import Foundation
 
 struct Receta{
     var id: String
+    var idUsuario: String
+    var idPerfil: String
+    var medicamentoId: String
     var nombre:String
     var horaConsumo:Int
     var minutos: Int
     var cantConsumo: Int
-    var medicamentoId: String
+    var duracionConsumo: Int
+    var frecuencia: Int
+    
 }
